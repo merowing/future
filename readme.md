@@ -5,6 +5,7 @@ I use this repository for practice.
 <p align="center">
     <img src="https://kparal.files.wordpress.com/2011/08/git-vim-commit.png" alt="Vim: how to insert data to the file">
 </p>
+
 `![Vim: how to insert data to the file](https://kparal.files.wordpress.com/2011/08/git-vim-commit.png)`
 
 ### How to edit the file with Vim?
