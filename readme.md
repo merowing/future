@@ -2,7 +2,7 @@ Just for the test not for the projects.
 
 I use this repository for practice.
 
-### How to edit the file?
+### How to edit the file with Vim?
 * press `[i]` and u can see *-- INSERT --* on the bottom line
 * after, press `[Esc]` and type :wq
 * press `[Enter]`
