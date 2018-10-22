@@ -4,15 +4,29 @@
 
 function identifyType(value) {
     let typeValue = typeof value;
-    console.log(typeValue);
+    return typeValue;
 }
 
 function getTypeof(option, callback) {
     if(typeof callback === 'function') {
-        callback(option);
+        return callback(option);
     }else {
-        console.log(option);
+        return option;
     }
 }
 
 getTypeof({}, identifyType);
+
+// n!
+
+/**
+ * execution context
+ * val * (val - 1) * ... * (val - n)
+ * 
+ */
+
+function n(val) {
+    // одинцю можна не перевіряти
+    if(val === 2) return val;
+    return val * n(val - 1);
+}
