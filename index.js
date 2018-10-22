@@ -1,14 +1,17 @@
 // this is the test message...
-window.onload = function() {
-    var obj = {
-        id: '1234',
-        message: 'test message'
-    };
+const obj = {
+    id: '1234',
+    message: 'test message',
+    [getKey('b')]: true
+};
 
-    var id = document.getElementById("mainMessage"),
-        oMess = obj.message,
-        oId = obj.id;
-
-    id.innerText = oMess;
-    id.setAttribute('messageId', oId);
+function getKey(b) {
+    return `the key is ${b}`;
 }
+
+const id = document.getElementById("mainMessage");
+const oMess = obj.message;
+const oId = obj.id;
+
+id.innerText = oMess;
+id.setAttribute('messageId', oId);
