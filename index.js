@@ -1,14 +1,18 @@
 // this is the test message...
-window.onload = function() {
-    var obj = {
-        id: '1234',
-        message: 'test message'
-    };
 
-    var id = document.getElementById("mainMessage"),
-        oMess = obj.message,
-        oId = obj.id;
+// use callback function
 
-    id.innerText = oMess;
-    id.setAttribute('messageId', oId);
+function identifyType(value) {
+    let typeValue = typeof value;
+    console.log(typeValue);
 }
+
+function getTypeof(option, callback) {
+    if(typeof callback === 'function') {
+        callback(option);
+    }else {
+        console.log(option);
+    }
+}
+
+getTypeof({}, identifyType);
