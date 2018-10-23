@@ -19,9 +19,11 @@ let len = arr.length;
 let maxValue = 0;
 // maxValue = 0 - значення за замовчуванням, якщо не передається
 //function getMaxValue(arr, i, maxValue = 0) {
-let getMaxValue = (arr, i, maxValue = 0) => {
+var getMaxValue = (arr, i = arr.length, maxValue = 0) => {
+    if(!(arr instanceof Array)) return `${typeof arr} isn't Array!`;
+
     if(i <= 0) return maxValue;
     maxValue = (maxValue > arr[i]) ? maxValue : arr[i];
     return getMaxValue(arr, --i, maxValue);
 }
-getMaxValue(arr, (len - 1)); // getMaxValue(any, Array.length - 1);
+getMaxValue(arr); // getMaxValue(any, Array.length - 1);
