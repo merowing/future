@@ -27,3 +27,30 @@ var getMaxValue = (arr, i = arr.length, maxValue = 0) => {
     return getMaxValue(arr, --i, maxValue);
 }
 getMaxValue(arr); // getMaxValue(any, Array.length - 1);
+
+/**
+ * quicksort function
+ * 
+ */
+let n = 0;
+function qSort(arr) {
+    let len = arr.length;
+    let leftPosition = 0;
+    let rigthPosition = 0;
+
+    let first = arr[n];
+    for(let i = 1; i < len - 1; i++) {
+        if(arr[i] > first) {
+            leftPosition = i;
+            break;
+        }
+    }
+    for(let j = len - 1; j > 0; j--) {
+        if(arr[j] < first) {
+            rightPosition = j;
+            break;
+        }
+    }
+    return arr;
+}
+qSort([4,9,1,32,0,24]);
