@@ -10,3 +10,8 @@ document.body.addEventListener("click", function() {
  * 
  * бо ми можемо перезаписати попередні події
  */
+
+(function() {
+  const value = 5;
+  let a = 0;
+})();
