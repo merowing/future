@@ -30,7 +30,7 @@ getMaxValue(arr); // getMaxValue(any, Array.length - 1);
 
 /**
  * quicksort function
- * 
+ * don't work
  */
 let n = 0;
 function qSort(arr) {
@@ -51,6 +51,7 @@ function qSort(arr) {
             break;
         }
     }
+
     return arr;
 }
 qSort([4,9,1,32,0,24]);

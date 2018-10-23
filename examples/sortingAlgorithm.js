@@ -14,3 +14,24 @@
     }
     return arr;
 })([3,5,-2,4]);
+
+/**
+ * Section sort
+ */
+(function(arr){
+    let len = arr.length;
+    let maxId = 0;
+	let l = 0;
+    while(l < len - 1) {
+        for(let i = l; i < len; i++) {
+            if(arr[maxId] > arr[i]) {
+                maxId = i;
+            }
+        }
+        let t = arr[maxId];
+        arr[maxId] = arr[l];
+        arr[l] = t;
+        l += 1;
+    }
+    return arr;
+})([1,3,2,0,-10]);
