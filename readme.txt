@@ -1,3 +1,3 @@
 vsc
 
-how .gitignore ignores files that added to commit!
+how .gitignore ignores files that have been add to commit!
