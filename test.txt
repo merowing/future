@@ -1,3 +1,2 @@
 test
 bitbucket better?
-we'll be ignore all text files in current folder

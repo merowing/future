@@ -8,3 +8,14 @@ I use this repository for practice.
 * press `[Esc]` and type :wq
 * press `[Enter]`
 * the file will be save and you close it immediately
+
+*.gitignore*  
+`# ignores all .txt files JUST in the current folder`  
+`*.txt`
+ 
+`# ignores all .txt recursive from the current folder`  
+`**.txt`
+ 
+`# ignores all .txt in subdirectories recursive from the current`  
+`# folder (does not include the current folder)`  
+`**/*.txt`
