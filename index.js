@@ -27,6 +27,11 @@ getTypeof({}, identifyType);
 
 function n(val) {
     // одинцю можна не перевіряти
-    if(val === 2) return val;
+    if(val === 1) return val;
     return val * n(val - 1);
+}
+
+function power(a, b) {
+    if(b === 1) return a;
+    return a * power(a, (b - 1));
 }
