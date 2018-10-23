@@ -16,12 +16,8 @@ let func6 = (name, surname) => {
 let arr = [1, 4, 0, 10];
 let len = arr.length;
 let maxValue = 0;
-function getMaxValue(arr, i) {
-    if(i <= 0) {
-		let maxValue1 = maxValue;
-		maxValue = 0;
-		return maxValue1;
-    }
+function getMaxValue(arr, i, maxValue = 0) {
+    if(i <= 0) return maxValue;
     maxValue = (maxValue > arr[i]) ? maxValue : arr[i];
-    return getMaxValue(arr, --i);
+    return getMaxValue(arr, --i, maxValue);
 }
