@@ -17,6 +17,7 @@
 
 /**
  * Section sort
+ * the point is that you must find max value of array
  */
 (function(arr){
     let len = arr.length;
