@@ -66,37 +66,3 @@
     }
     return arr;
 })([3,1,2,-1,4,3,-2]);
-
-/**
- * Merge sort
- * not working yet
- */
-
-/*(function(arr) {
-    let l = 0;
-    let r = 1;
-    function divide(arr, l, r) {
-        let len = arr.length;
-        if(arr[l] > arr[r] && len > r) {
-            let temp = arr[l];
-            arr[l] = arr[r];
-            arr[r] = arr[l];
-        }
-        if(len/r <= 1) return arr;
-        l += 2;
-        r += 2;
-        return divide(arr, l, r);
-    }
-    return divide(arr,0,1) // -> [1,4,2,3]
-})([1,4,3,2]);
-*/
-
-/**
- * Merge sort. Charter II
- * 
- * We have two arrays and we must merge and sort them.
- * [1,4,3,2] + [6,0,9,7]
- */
-(function(arr1, arr2){
-
-})([1,4,3,2], [6,0,9,7]);
